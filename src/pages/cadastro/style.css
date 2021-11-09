@@ -9,6 +9,11 @@
     padding: 50px 20px;
     
   }
+
+  .cadastro-h1{
+    font-size: 30px;
+    margin: 0px 0px 20px 0px;
+  }
   
   .forms > input{
     margin-bottom: 10px;

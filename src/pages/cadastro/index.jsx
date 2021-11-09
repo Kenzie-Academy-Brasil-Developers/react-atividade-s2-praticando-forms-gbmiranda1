@@ -34,8 +34,9 @@ function Cadastrar({setUsers, usuarios}){
 
     return (
         <div>
-          <h1>Cadastre-se</h1>
+          
           <form className="forms" onSubmit={handleSubmit(onSubmitFunction)}>
+            <h1 className="cadastro-h1">Cadastre-se</h1>
               <input placeholder="Nome de usuário" {...register("nameUser")}/>
               <p className="error">{errors.nameUser?.message}</p>
               <input placeholder="Nome Completo" {...register("name")}/>
