@@ -1,0 +1,96 @@
+.forms{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 270px;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #e7e7e736;
+    padding: 50px 20px;
+    
+  }
+  
+  .forms > input{
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .forms input:not([type="checkbox"] ){
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(165, 165, 165);
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  .forms input:focus-visible{
+    border: 5px solid #283266;
+  }
+  
+  .senha{
+    display: flex;
+    font-size: 10px;
+    justify-content: space-between;
+  }
+  
+  .senha input:last-child{
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  
+  
+  .checkbox{
+    display: flex;
+    font-size: 10px;
+    margin-top: 10px;
+    flex-direction: column;
+  
+  }
+  
+  .checkbox-internal{
+    display: flex;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+  
+  .checkbox-internal label{
+    padding-top: 4px;
+  }
+  
+  .button{
+    background-color: #283266;
+    color: white;
+    padding: 5px;
+    border: 0px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .checkbox .error{
+    margin: 3px 0px 0px 20px;
+    color: rgba(236, 240, 0, 0.774)
+  }
+  
+  .error{
+    margin: 0px;
+    text-align: start;
+    margin-bottom: 15px;
+    margin-top: -8px;
+    font-size: 10px;
+    color: rgba(236, 240, 0, 0.774)
+  }
+  
+  .error-senha:last-child{
+     margin-left: 10px;
+  }
+  
+  .error-senha .error{
+    margin-top: 3px;
+  }
+  
+  .error-senha input{
+    font-size: 10px;
+  }
+  
