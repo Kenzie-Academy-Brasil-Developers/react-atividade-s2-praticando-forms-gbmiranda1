@@ -8,6 +8,9 @@ function Inicio({usuarios}){
     return (
         <div>
             <p>Olá, {user.name}</p>
+            <p>E-mail: {user.email}</p>
+            <p>Usuário: {user.nameUser}</p>
+            <p>Senha: {"*".repeat(user.senha.length)}</p>
             <button onClick={()=> history.push("/")} className="button">Sair</button>
         </div>
     )

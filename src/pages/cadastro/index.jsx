@@ -9,10 +9,10 @@ function Cadastrar({setUsers, usuarios}){
     const history = useHistory();
 
     const formSchema = yup.object().shape({
-        nameUser: yup.string().required("Usuário obrigatório"),
-        name: yup.string().required("Nome obrigatório"),
+        nameUser: yup.string().required("Usuário obrigatório").matches("^[a-zA-Z0-9]([._-](?![._-])|[a-zA-Z0-9]){3,18}[a-zA-Z0-9]$", "Sem Espaços"),
+        name: yup.string().required("Nome obrigatório").test('len', 'No máximo 18 caracteres', val => val.length <= 18),
         email: yup.string().required("E-mail obrigatório").email("E-mail inválido"),
-        senha: yup.string().required("Senha obrigatória"),
+        senha: yup.string().required("Senha obrigatória").matches("^[0-9a-zA-Z$*&@#]{8,}", "No mínimo 8 caracters"),
         confirmacaoSenha: yup.string().oneOf([yup.ref('senha'), null], "Senhas não coincidem"),
         checkbox: yup.bool().oneOf([true], "Seleção Obrigatória")
     })

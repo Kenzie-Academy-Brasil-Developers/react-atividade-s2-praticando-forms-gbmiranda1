@@ -31,7 +31,7 @@ function Entrar({usuarios}){
     return(
         <div>
             <form className="forms" onSubmit={handleSubmit(onSubmitFunction)}>
-                <h1 className="h1-entrar">Entrar</h1>
+                <h1 className="cadastro-h1">Entrar</h1>
                 <input placeholder="Usuário" type="text" {...register("nameUser")}/>
                 <p className="error">{errors.nameUser?.message}</p>
                 <input placeholder="Senha" type="password" {...register("senha")} />
